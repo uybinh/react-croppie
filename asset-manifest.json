@@ -1,7 +1,7 @@
 {
   "main.css": "/react-croppie/static/css/main.31f63146.chunk.css",
-  "main.js": "/react-croppie/static/js/main.79015135.chunk.js",
-  "main.js.map": "/react-croppie/static/js/main.79015135.chunk.js.map",
+  "main.js": "/react-croppie/static/js/main.e550a02e.chunk.js",
+  "main.js.map": "/react-croppie/static/js/main.e550a02e.chunk.js.map",
   "static/css/1.3d29f992.chunk.css": "/react-croppie/static/css/1.3d29f992.chunk.css",
   "static/js/1.36eb0392.chunk.js": "/react-croppie/static/js/1.36eb0392.chunk.js",
   "static/js/1.36eb0392.chunk.js.map": "/react-croppie/static/js/1.36eb0392.chunk.js.map",
@@ -10,6 +10,6 @@
   "static/css/1.3d29f992.chunk.css.map": "/react-croppie/static/css/1.3d29f992.chunk.css.map",
   "static/css/main.31f63146.chunk.css.map": "/react-croppie/static/css/main.31f63146.chunk.css.map",
   "index.html": "/react-croppie/index.html",
-  "precache-manifest.338d6019a5e48051541c2df6c4c9c0c5.js": "/react-croppie/precache-manifest.338d6019a5e48051541c2df6c4c9c0c5.js",
+  "precache-manifest.e2a4752a29fbb3195587961160ea04fa.js": "/react-croppie/precache-manifest.e2a4752a29fbb3195587961160ea04fa.js",
   "service-worker.js": "/react-croppie/service-worker.js"
 }
