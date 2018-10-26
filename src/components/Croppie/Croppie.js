@@ -1,7 +1,6 @@
 import React, { Component } from "react"
 import { Croppie } from "croppie"
 import "croppie/croppie.css"
-import Preview from "../Preview/Preview"
 import Aux from "../../hoc/Aux"
 
 const DEFAULT_OPTS = {
