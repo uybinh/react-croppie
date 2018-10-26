@@ -84,7 +84,6 @@ class CroppieComp extends Component {
           </div>
           <button onClick={this.crop}>Show result</button>
         </div>
-
         <div id="demo" ref={el => (this.croppieCont = el)} />
         {this.state.result && result}
       </Aux>
