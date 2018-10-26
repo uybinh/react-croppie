@@ -1,12 +1,12 @@
 import React, { Component } from "react"
 import { Croppie } from "croppie"
 import "croppie/croppie.css"
+import classes from "./Croppie.module.css"
 import Aux from "../../hoc/Aux"
 
 const DEFAULT_OPTS = {
   boundary: { width: 300, height: 300 },
   showZoomer: true,
-  enableOrientation: true,
   mouseWheelZoom: "ctrl"
 }
 
@@ -47,42 +47,46 @@ class CroppieComp extends Component {
     })
   }
 
-  clear = () => {
-    this.setState({
-      result: null
-    })
-  }
-
   optionSelectHandler = e => {
     this.setState({ type: e.target.value })
   }
 
   render() {
+    const result = (
+      <div className={classes.Preview}>
+        <img src={this.state.result} alt="result" />
+      </div>
+    )
     return (
       <Aux>
-        <label>
-          Circle
-          <input
-            name="type"
-            type="radio"
-            value="circle"
-            onChange={this.optionSelectHandler}
-            checked={this.state.type === "circle"}
-          />
-        </label>
-        <label>
-          Square
-          <input
-            name="type"
-            type="radio"
-            value="square"
-            onChange={this.optionSelectHandler}
-            checked={this.state.type === "square"}
-          />
-        </label>
-        <button onClick={this.crop}>Show result</button>
+        <div className={classes.Controls}>
+          <div className={classes.RadioGroup}>
+            <label>
+              Circle
+              <input
+                name="type"
+                type="radio"
+                value="circle"
+                onChange={this.optionSelectHandler}
+                checked={this.state.type === "circle"}
+              />
+            </label>
+            <label>
+              Square
+              <input
+                name="type"
+                type="radio"
+                value="square"
+                onChange={this.optionSelectHandler}
+                checked={this.state.type === "square"}
+              />
+            </label>
+          </div>
+          <button onClick={this.crop}>Show result</button>
+        </div>
+
         <div id="demo" ref={el => (this.croppieCont = el)} />
-        {this.state.result && <img src={this.state.result} alt="result" />}
+        {this.state.result && result}
       </Aux>
     )
   }

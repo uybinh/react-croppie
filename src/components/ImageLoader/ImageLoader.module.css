@@ -1,0 +1,24 @@
+.ImageLoader {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.ImageLoader input {
+  height: 1px;
+  width: 1px;
+  outline: none;
+}
+
+.ImageLoader label {
+  padding: 10px 25px;
+  color: white;
+  font-weight: 700;
+  background: hsl(16, 100%, 46%);
+  border-radius: 3px;
+  transition: background .2s ease-out;
+  cursor: pointer;
+}
+
+.ImageLoader label:hover {
+  background: hsl(16, 100%, 36%);
+}
